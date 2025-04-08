@@ -1,5 +1,12 @@
+html{
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -11,3 +18,440 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+p{
+  font-size: 1rem !important;
+}
+
+button{
+  border: none;
+}
+
+.nav_cont{
+  display: none;
+}
+
+.sec_cont{
+  display: none;
+}
+
+.side_cont{
+  display: none !important;
+}
+
+
+.fa-credit-card, .fa-gift, .fa-truck, .fa-plane{
+  color: gold;
+  font-size: larger;
+}
+
+.fa-envelope{
+  color: orangered !important;
+}
+
+.dBox_1 {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+
+.formBox_1 {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+  width: 90%;
+  margin: auto;
+}
+
+.scroll-container {
+  width: 100%;         /* Full width of the page */
+  overflow-x: auto;    /* Enable horizontal scroll */
+  white-space: nowrap; /* Prevent line breaks */
+  border: 1px solid #ccc;
+}
+
+.scroll-cont {
+  width: 100%;         /* Full width of the page */
+  overflow-x: auto;    /* Enable horizontal scroll */
+  white-space: nowrap; /* Prevent line breaks */
+  border: none;
+}
+
+.ad_row{
+  transition: background-color 2s;
+}
+
+.can-cont button{
+  transition: background-color 1s;
+}
+
+.can-cont button:hover{
+   background-color: #198754 !important;
+   cursor: pointer;
+}
+
+.ad_row:hover{
+  background-color: #ddd !important;
+  cursor: pointer;
+}
+
+.gold-colr{
+  background-color: gold;
+}
+
+.blue-colr{
+  background-color: #054d92;
+}
+
+.main_cont button{
+  background-color: gold;
+  color: white;
+  letter-spacing: 1px;
+  border: none;
+  font-weight:500;
+}
+
+.mobile_cont{
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.5s;
+}
+
+.main_cont button{
+   transition: background-color 1s;
+}
+
+.main_cont button:hover{
+   background-color: goldenrod;
+}
+
+.hero{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/ship.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+}
+
+
+.inp_cont input{
+  border: none;
+  border-radius: 0px;
+}
+
+
+.inp_cont span{
+  border: #054d92;
+  border-radius: 0px;
+}
+
+
+.abo_cont{
+  background: #054d92;
+  padding: 5px 5px 5px 7px;
+  width: 97%;
+}
+
+.next_screen{
+ transition: background-color 2s;
+}
+
+.next_screen:hover{
+   background-color: navy !important;
+   cursor: pointer;
+}
+
+.con-sen{
+  cursor: pointer;
+}
+
+.b_1:hover p{
+  color: red;
+}
+
+.b_2:hover p{
+  color: red;
+}
+
+.mob div:active{
+  background-color: gold !important;
+}
+
+.a_log{
+    background-color: gold !important;
+    color: black !important;
+}
+
+.a_log:active{
+  color: green !important;
+}
+/* Media query for nav min-width: 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+   .nav_hid{
+    display: none !important;
+   }
+
+   .A_img{
+    height: 390px !important;
+   }
+
+   .c_cont{
+     padding: 20px 5px 50px 5px !important;
+   }
+
+   .s_btn{
+     margin-top: 20px !important;
+   }
+
+   .h_btn{
+    margin-top: 30px !important;
+  }
+
+  .nav_cont{
+    display: block;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    padding-right: 10px;
+    overflow: hidden ;
+   }
+
+
+   .h_over span:hover{
+    background-color: #054d92 !important;
+    color: white;
+   }
+
+.formBox_1 {
+  width: 50% !important;
+ 
+}
+  .main_cont{
+    margin-top:  0px !important;
+  }
+
+  .sec_cont{
+    display: block;
+    width: 40% !important;
+  }
+
+  .first_col{
+    width: 60% !important;
+  }
+ 
+.img_logo{
+  width: 8% !important;
+}
+
+.can-cont{
+ width: 25% !important;
+}
+
+.img_logo_two{
+  width: 25% !important;
+}
+
+.hero{
+  padding-top: 160px !important;
+  padding-bottom: 80px !important;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.hero h2{
+  font-size: 3rem !important;
+  font-weight: 900 !important;
+}
+
+.hero h3{
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  margin-bottom: 50px !important;
+}
+
+
+.inp_cont{
+  padding: 0px 90px 0px 90px !important;
+  margin-bottom: 30px !important;
+}
+
+.inp_cont input{
+  padding: 10px !important;
+  border: none;
+  border-radius: 0px;
+}
+
+
+.inp_cont span{
+  padding: 10px !important;
+  border: #054d92;
+  border-radius: 0px;
+}
+
+.abo_cont{
+  background: none;
+  box-shadow: none;
+  transition: all 0.5s;
+  padding: 0px;
+  width: 100%;
+}
+
+.head{
+  color: black !important;
+}
+
+
+.dashb_cont{
+  margin-top: 40px !important;
+}
+
+.h1_1{
+  color: black !important;
+}
+
+
+}
+
+
+/* Media query for nav min-width: 992px */
+@media only screen and (min-width: 992px){
+ 
+   .nav_cont{
+    display: block;
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    padding-right: 10px;
+    overflow: hidden ;
+   }
+
+
+   .h_over span:hover{
+    background-color: #054d92 !important;
+    color: white;
+   }
+
+.formBox_1 {
+  width: 50% !important;
+ 
+}
+  .main_cont{
+    margin-top:  0px !important;
+  }
+
+  .sec_cont{
+    display: block;
+    width: 40% !important;
+  }
+
+  .first_col{
+    width: 60% !important;
+  }
+ 
+.img_logo{
+  width: 8% !important;
+}
+
+.can-cont{
+ width: 25% !important;
+}
+
+.img_logo_two{
+  width: 25% !important;
+}
+
+.hero{
+  padding-top: 160px !important;
+  padding-bottom: 80px !important;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.hero h2{
+  font-size: 3rem !important;
+  font-weight: 900 !important;
+}
+
+.hero h3{
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+  margin-bottom: 50px !important;
+}
+
+
+.inp_cont{
+  padding: 0px 90px 0px 90px !important;
+  margin-bottom: 30px !important;
+}
+
+.inp_cont input{
+  padding: 10px !important;
+  border: none;
+  border-radius: 0px;
+}
+
+
+.inp_cont span{
+  padding: 10px !important;
+  border: #054d92;
+  border-radius: 0px;
+}
+
+.abo_cont{
+  background: none;
+  box-shadow: none;
+  transition: all 0.5s;
+  padding: 0px;
+  width: 100%;
+}
+
+.head{
+  color: black !important;
+}
+
+
+.dashb_cont{
+  margin-top: 40px !important;
+}
+
+.h1_1{
+  color: black !important;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
