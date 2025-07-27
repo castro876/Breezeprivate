@@ -5,14 +5,14 @@ import { getAuth } from "firebase/auth";
 
 // Your Firebase configuration from the Firebase Console
 const firebaseConfig = {
-    apiKey: "AIzaSyAzexNWFpH3Hbf2jbcNvjk9RcUv8Qy14kg",
-    authDomain: "shop-project-edd8e.firebaseapp.com",
-    projectId: "shop-project-edd8e",
-    storageBucket: "shop-project-edd8e.firebasestorage.app",
-    messagingSenderId: "373089656545",
-    appId: "1:373089656545:web:d9912cb5b329a65d8e21a0",
-    measurementId: "G-G7K5XZC69R"
-  };
+  apiKey: "AIzaSyC32aWVnMmnx49VITsfgx9OmrlbwUZDs1U",
+  authDomain: "react-project-x-f0c3a.firebaseapp.com",
+  projectId: "react-project-x-f0c3a",
+  storageBucket: "react-project-x-f0c3a.firebasestorage.app",
+  messagingSenderId: "309422066524",
+  appId: "1:309422066524:web:77db325d0edd9156678f99",
+  measurementId: "G-5WER8HR08Q"
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -49,6 +49,10 @@ button{
   color: orangered !important;
 }
 
+.body-footer .fa-envelope{
+  color: gold !important;
+}
+
 .dBox_1 {
   background: #fff;
   border-radius: 0 0 4px 4px;
@@ -311,6 +315,9 @@ button{
   color: black !important;
 }
 
+#watsApp{
+  width: 20% !important;
+}
 
 }
 
@@ -420,6 +427,9 @@ button{
   color: black !important;
 }
 
+#watsApp{
+  width: 20% !important;
+}
 
 }
 

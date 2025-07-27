@@ -161,9 +161,9 @@ const Policy = () => {
                     <div className="row gy-4 gx-5">
                         <div className="col-lg-4 col-md-6">
                             <h5 className="h1 text-white">Contact Us</h5>
-                            <p className="small text-white">Call: (876) 237-2548</p>
-                            <p className="small text-white">Watsapp: (876) 852-6577</p>
-                            <p className="small text-white">Email: ship@breezeexpress.online </p>
+                            <a href="tel:+18762372548" className="text-decoration-none me-2" style={{'fontSize':'1rem'}}><p className="small text-white"> <i class="fa fa-phone fs-5 fw-bold text-danger" aria-hidden="true"></i> Call: (876) 237-2548</p></a>
+                            <a href="https://wa.me/18768526578" className="text-decoration-none me-2" target="_blank"><p className="small text-white"> <i class="fa fa-whatsapp fs-5 fw-bold text-success" aria-hidden="true"></i> Watsapp: (876) 852-6578</p></a>
+                            <a href="mailto:ship@breezeexpress.online" className="text-decoration-none mx-1" style={{'fontSize':'1rem'}}><p className="small text-white"><i class="fa fa-envelope fs-5 fw-bold" aria-hidden="true"></i> Email: ship@breezeexpress.online </p></a>
                             <p><i class="fa fa-twitter-square me-3" aria-hidden="true"></i> 
                           <a href="https://www.instagram.com/breezeexpressja?igsh=MTRpbDd2eTZ3endxOQ=="  className="text-decoration-none text-white"><i class="fa fa-instagram me-3" aria-hidden="true"></i></a> 
                             <i class="fa fa-facebook-square me-3" aria-hidden="true"></i>
@@ -172,8 +172,8 @@ const Policy = () => {
                         <div className="col-lg-2 col-md-6">
                             <h5 className="text-white mb-3">Menu</h5>
                             <ul className="list-unstyled text-dark">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/">About</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#about">About</a></li>
                                 <li><a href="/signup">Get started</a></li>
                                 <li><a href="/signin" target={'_blank'}>Login</a></li>
                             </ul>
@@ -181,8 +181,8 @@ const Policy = () => {
                         <div className="col-lg-2 col-md-6">
                             <h5 className="text-white mb-3">Menu</h5>
                             <ul className="list-unstyled text-dark">
-                                <li><a href="/">Home</a></li>
-                                <li><a href="/">Services</a></li>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#service">Services</a></li>
                                 <li><a href="/signup">Get started</a></li>
                                 <li><a href="/signup" target={'_blank'}>Register</a></li>
                             </ul>
