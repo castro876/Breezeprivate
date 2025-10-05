@@ -10,7 +10,7 @@ import UsrAdmin from './Components/admin_component/usr_admin';
 import UAccess from './Page/Uadmin';
 import OrderDetails from './Components/dash_component/order_info';
 import Policy from './Components/policy_component/usr_policy';
-
+import OrderComp from './Components/order_componenet/Order';
 import SendEmailComponent from "./Components/email_component/emailj"
 
 function App() {
@@ -26,8 +26,8 @@ function App() {
           <Route path="/access" element={<UsrAdmin />} />
           <Route path="/pannel" element={<UAccess />} />
           <Route path="/policy" element={<Policy />} />
+          <Route path="/order/:id" element={<OrderComp />} />
           <Route path="/email" element={<SendEmailComponent />} />
-
           {/* Protected Routes */}
           <Route 
             path="/dashboard" 

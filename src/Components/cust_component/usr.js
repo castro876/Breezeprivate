@@ -1,5 +1,7 @@
-import React, { useState } from "react";
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import { db } from "../usr_component/firebase";
+import { collection, getDocs } from "firebase/firestore";
+import { Link, useNavigate } from 'react-router-dom';
 import Foot from "../foot_component/usr_foot"
 import DOMPurify from 'dompurify';
 import { motion } from "framer-motion"
@@ -15,6 +17,9 @@ function Appy() {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  const navigate = useNavigate(); // 👈 Initialize navigate
+
 
   // Input validation
   const validateInput = () => {
@@ -83,9 +88,41 @@ function Appy() {
     setFormData({ ...formData, [name]: value });
   };
 
+    // Handle search input
+  const [orderID, setOrderID] = useState("");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const handleTrackOrder = async () => {
+    setErrorMsg(""); // Clear previous error
+
+    if (!orderID.trim() || orderID.trim().length > 20) {
+      setErrorMsg("Please enter a valid tracking number.");
+      return;
+    }
+  
+    try {
+      const querySnapshot = await getDocs(collection(db, "orders"));
+      let found = false;
+  
+      querySnapshot.forEach((doc) => {
+        if (doc.data().trackingNumber === orderID.trim().toUpperCase()) {
+          found = true;
+        }
+      });
+  
+      if (found) {
+        navigate(`/order/${orderID}`); //Redirect after order placed
+      } else {
+        setErrorMsg("Tracking number not found.");
+      }
+    } catch (error) {
+      console.error("Error checking order ID:", error);
+      setErrorMsg("An error occurred while checking the tracking number.");
+    }
+  };
 
   return (
-    <div>
+    <div style={{"overflow":"hidden"}}>
        
        <div className="main_cont fixed-top">
           <nav className="bg-white pe-3" style={{"overflow":"hidden"}}>
@@ -102,7 +139,6 @@ function Appy() {
             </ul>
           </nav>
         
-
 <nav className="mobile_cont d-md-none fixed-top">
 <button style={{"backgroundColor":"#054d92"}} className="btn btn-white mx-2 my-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i className="fa fa-bars" style={{"fontSize":"25px"}} aria-hidden="true"></i>
 </button> <Link to={'/signin'}><button style={{"backgroundColor":"gold"}} className="btn btn-white" type="button" >Sign in</button></Link>
@@ -161,12 +197,14 @@ function Appy() {
         <h3 className="mb-4 fw-bold" style={{"color":"white"}}>Our Customer Satisfaction Is All That Matters</h3>
         </motion.div>
         <div class="inp_cont input-group px-3 mb-1 position-relative">
-  <input type="text" class="form-control mobile_cont" placeholder="Tracking Number" aria-label="Recipient's username" aria-describedby="basic-addon2" />
- <Link to="/signin" className="text-decoration-none"><div class="input-group-append">
-    <span class="input-group-text text-white text-decoration-none" id="basic-addon2" style={{"backgroundColor":"#054d92"}}>Track Order</span>
+  <input type="text" onChange={(e) => setOrderID(e.target.value)} class="form-control mobile_cont" placeholder="Tracking Number" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+  <div class="input-group-append">
+    <span onClick={handleTrackOrder} class="input-group-text text-white text-decoration-none" id="basic-addon2" style={{"backgroundColor":"#054d92"}}>Track Order</span>
   </div>
-  </Link>
 </div>
+{errorMsg && (
+  <p className="text-danger text-center mt-2 fs-5">{errorMsg}</p>
+)}
 <Link to="/signup"><button className="text-white p-2 px-5 mt-3" style={{"backgroundColor":"#054d92"}}>Sign up</button></Link>
 </div>
       </div>
