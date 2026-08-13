@@ -353,59 +353,228 @@ function Appy() {
   </thead>
   <tbody>
     <tr>
-      <td>0-2 lbs</td>
-      <td>$750</td>
+      <td>0-1 lbs</td>
+      <td>$850</td>
+    </tr>
+    <tr>
+      <td>2 lbs</td>
+      <td>$1600</td>
     </tr>
     <tr>
       <td>3 lbs</td>
-      <td>$1700</td>
+      <td>$2450</td>
     </tr>
     <tr>
       <td>4 lbs</td>
-      <td>$2100</td>
-    </tr>
-    <tr>
-      <td>5 lbs</td>
-      <td>$2400</td>
-    </tr>
-    <tr>
-      <td>6 lbs</td>
-      <td>$2850</td>
-    </tr>
-    <tr>
-      <td>7 lbs</td>
       <td>$3300</td>
     </tr>
     <tr>
+      <td>5 lbs</td>
+      <td>$4150</td>
+    </tr>
+    <tr>
+      <td>6 lbs</td>
+      <td>$5000</td>
+    </tr>
+    <tr>
+      <td>7 lbs</td>
+      <td>$5850</td>
+    </tr>
+    <tr>
       <td>8 lbs</td>
-      <td>$3650</td>
+      <td>$6700</td>
     </tr>
     <tr>
       <td>9 lbs</td>
-      <td>$4100</td>
+      <td>$7550</td>
     </tr>
     <tr>
       <td>10 lbs</td>
-      <td>$4460</td>
+      <td>$8400</td>
     </tr>
     <tr>
-      <td>11-20 lbs</td>
-      <td>$6130</td>
+      <td>11 lbs</td>
+      <td>$9250</td>
     </tr>
     <tr>
-      <td>21-30 lbs</td>
-      <td>$9630</td>
+      <td>12 lbs</td>
+      <td>$10100</td>
     </tr>
     <tr>
-      <td>31-50 lbs</td>
-      <td>$13388</td>
+      <td>13 lbs</td>
+      <td>$10950</td>
+    </tr>
+    <tr>
+      <td>14 lbs</td>
+      <td>$11800</td>
+    </tr>
+    <tr>
+      <td>15 lbs</td>
+      <td>$12650</td>
+    </tr>
+  </tbody>
+</table><br></br>
+
+<p>
+  <a class="btn text-white" style={{"backgroundColor":"#054d92"}} data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    More Rates
+  </a>
+</p>
+
+<div class="collapse" id="collapseExample">
+  <table class="table table-warning table-striped table-hover w-75 m-auto ">
+  <thead>
+    <tr>
+      <th scope="col">Weight</th>
+      <th scope="col">Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16 lbs</td>
+      <td>$13500</td>
+    </tr>
+    <tr>
+      <td>17 lbs</td>
+      <td>$14350</td>
+    </tr>
+    <tr>
+      <td>18 lbs</td>
+      <td>$15200</td>
+    </tr>
+    <tr>
+      <td>19 lbs</td>
+      <td>$16050</td>
+    </tr>
+    <tr>
+      <td>20 lbs</td>
+      <td>$16900</td>
+    </tr>
+    <tr>
+      <td>21 lbs</td>
+      <td>$17750</td>
+    </tr>
+    <tr>
+      <td>22 lbs</td>
+      <td>$18600</td>
+    </tr>
+    <tr>
+      <td>23 lbs</td>
+      <td>$19450</td>
+    </tr>
+    <tr>
+      <td>24 lbs</td>
+      <td>$20300</td>
+    </tr>
+    <tr>
+      <td>25 lbs</td>
+      <td>$21150</td>
+    </tr>
+    <tr>
+      <td>26 lbs</td>
+      <td>$22000</td>
+    </tr>
+    <tr>
+      <td>27 lbs</td>
+      <td>$22850</td>
+    </tr>
+    <tr>
+      <td>28 lbs</td>
+      <td>$23700</td>
+    </tr>
+    <tr>
+      <td>29 lbs</td>
+      <td>$24550</td>
+    </tr>
+    <tr>
+      <td>30 lbs</td>
+      <td>$25400</td>
+    </tr>
+    <tr>
+      <td>31 lbs</td>
+      <td>$26250</td>
+    </tr>
+    <tr>
+      <td>32 lbs</td>
+      <td>$27100</td>
+    </tr>
+    <tr>
+      <td>33 lbs</td>
+      <td>$27950</td>
+    </tr>
+    <tr>
+      <td>34 lbs</td>
+      <td>$28800</td>
+    </tr>
+    <tr>
+      <td>35 lbs</td>
+      <td>$29650</td>
+    </tr>
+    <tr>
+      <td>36 lbs</td>
+      <td>$30500</td>
+    </tr>
+    <tr>
+      <td>37 lbs</td>
+      <td>$31350</td>
+    </tr>
+    <tr>
+      <td>38 lbs</td>
+      <td>$32200</td>
+    </tr>
+    <tr>
+      <td>39 lbs</td>
+      <td>$33050</td>
+    </tr>
+    <tr>
+      <td>40 lbs</td>
+      <td>$33900</td>
+    </tr>
+    <tr>
+      <td>41 lbs</td>
+      <td>$34750</td>
+    </tr>
+    <tr>
+      <td>42 lbs</td>
+      <td>$35600</td>
+    </tr>
+    <tr>
+      <td>43 lbs</td>
+      <td>$36450</td>
+    </tr>
+    <tr>
+      <td>44 lbs</td>
+      <td>$37300</td>
+    </tr>
+    <tr>
+      <td>45 lbs</td>
+      <td>$38150</td>
+    </tr>
+    <tr>
+      <td>46 lbs</td>
+      <td>$39000</td>
+    </tr>
+    <tr>
+      <td>47 lbs</td>
+      <td>$39850</td>
+    </tr>
+    <tr>
+      <td>48 lbs</td>
+      <td>$40700</td>
+    </tr>
+    <tr>
+      <td>49 lbs</td>
+      <td>$41550</td>
     </tr>
     <tr>
       <td>50 lbs</td>
-      <td>$28300</td>
+      <td>$42400</td>
     </tr>
   </tbody>
-</table>
+ </table>
+ 
+</div>
+
    </div>
 
 
